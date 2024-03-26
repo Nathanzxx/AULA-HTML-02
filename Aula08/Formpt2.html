@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Forms em HTML</title>
+
+</head>
+
+
+<body>
+    <header>
+        <h1>Exemplo de formulário no HTML</h1>
+    </header>
+    <article>
+        <form action="#">
+            <fieldset><br>
+                <legend><Strong>Dados do aluno</Strong></legend>
+
+                <label for="cNome">Nome:</label>
+                <input type="text" size=50 name="tNome" id="cNome" required="require
+ d" /> <br><br>
+                <label for="E-mail">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+                <br><br>
+                <label for="endereco">Endereco:</label>
+                <input type="text" name="endereco" id="endereco" required>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Localização</strong></legend>
+
+                <p>Você mora:</p>
+                <input type="radio" name="tipo" id="cid" value="C" />
+                <label for="cid">Cidade</label><br />
+
+                <input type="radio" name="tipo" id="inter" value="I" />
+                <label for="inter">Interior</label><br />
+
+
+                <p>Qual meio de transporte você usa?</p>
+                <input type="checkbox" id="transporte1" name="transporte1" value="Bi
+ ke" />
+                <label for="transporte1"> Bicicleta</label><br />
+                <input type="checkbox" id="transporte2" name="transporte2" value="Ca
+ r" />
+                <label for="transporte2"> Carro</label><br />
+                <input type="checkbox" id="transporte3" name="transporte3" value="Me
+ tro" />
+                <label for="transporte3"> Metrô</label><br />
+                <input type="checkbox" id="transporte4" name="transporte4" value="Bu
+ s" />
+                <label for="transporte4"> Ônibus</label>
+                <br />
+            </fieldset>
+            <fieldset>
+                <legend><strong>Cidade</strong></legend>
+                <label for="unidades">Selecione sua cidade</label>
+                <Select name="Unidade" id="unidades">
+
+                    <option value="Santana">santana</option>
+                    <option value="santo Amaro">santo Amaro</option>
+                    <option value="Diadema">Diadema</option>
+                    <option value="Itaquera">Itaquera</option>
+
+                </Select>
+                <br>
+                <p>Onde você mora</p>
+                <input type="text" list="cidade" autocomplete="on" name="ListaCidade" placeholder="Digite sua cidade">
+                <datalist id="cidade">
+
+                    <option value="São Paulo"></option>
+                    <option value="Campinas"></option>
+                    <option value="Santo Andre"></option>
+                    <option value="Juquitiba"></option>
+            </fieldset>
+            </datalist>
+
+            <fieldset>
+                <legend><strong>Comentarios</strong></legend>
+                <p>Grau de satisfação</p>
+                pouco satisfeito
+                <input type="range">
+                muito satisfeito
+                <br>
+                <br>
+
+                <textarea name="Avaliação" id="Avaliação" cols="30" rows="3" placeholder="Deixe seu comentario"
+                    maxlength="96" required></textarea>
+
+            </fieldset>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Redefinir">
+        </form>
+    </article>
